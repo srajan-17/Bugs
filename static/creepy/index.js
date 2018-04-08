@@ -1,6 +1,6 @@
 function gifSearch(searchTerm) {
 	fetch(
-		"https://api.giphy.com/v1/gifs/search?api_key=cDc72vtxlqrTJJr3Hod63GygeNhGa6R6&q="+encodeURIComponent(searchTerm),
+		"https://api.giphy.com/v1/gifs/search?api_key=FILLERFORAPIKEY&q="+encodeURIComponent(searchTerm),
 		{
 			mode:"cors"
 		}
