@@ -51,10 +51,11 @@
     		<br>
     		<form id="file_upload" action="#" method="get" enctype="multipart/form-data">
     			<!--<p><center><input align="center" type="file" class="btn btn-primary btn-lg" /></center></p>  </form>-->
-          <p><center><input type="file" multiple="false" class="btn btn-primary btn-lg" accept="image/*" id="finput" onchange="upload()" /></center></p>  </form>
-    			<p><input id="upload_image" type="submit" value="Upload Image" class="btn btn-primary btn-lg"/>
-    <!-- </form> -->
+          <p><center><input type="file" multiple="false" class="btn btn-primary btn-lg" accept="image/*" id="finput" onchange="readURL(this);" /></center></p>  </form>
+    			<!--<p><input id="upload_image" type="submit" value="Upload Image" class="btn btn-primary btn-lg"/>-->
         <a class="btn btn-primary btn-lg" href="http://www.apple.com" role="button">Analyze Bug</a></p>
+        <!--<canvas id="myCanvas" width="400" height="300" style="border:1px solid white; border-radius:50px"> </canvas>-->
+        <img id="blah" src="Waiting.jpg" alt="Your image will show here..." />
 
   		</div>
 	</div>
@@ -81,7 +82,9 @@
   		</div>
 	</section>
   </body>
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/ext.js"></script>
+  <!--<script type="text/javascript" src="js/jquery.js"></script>-->
+  <!--<script type="text/javascript" src="js/ext.js"></script>-->
   <script type="text/javascript" src="files.js"></script>
+
+
 </html>
