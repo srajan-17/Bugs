@@ -1,5 +1,5 @@
 $(document).ready(function() {
 
-	$(add_more).click();
+	$(upload_image).click();
 
 })
