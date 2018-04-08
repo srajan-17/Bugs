@@ -6,85 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bugs!</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	  <link href="css/custom.css" rel="stylesheet">
+	  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <nav class="navbar navbar-inverse navbar-static-top">
-  	<div class="container">
-    	<div class="navbar-header">
-      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        	<span class="sr-only">Toggle navigation</span>
-        	<span class="icon-bar"></span>
-    		<span class="icon-bar"></span>
-    		<span class="icon-bar"></span>
-      		</button>
-
-    	</div>
-    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      		<ul class="nav navbar-nav navbar-right">
-        		<li><a href="#">About</a></li>
-        		<li class="dropdown">
-          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
-          	<ul class="dropdown-menu">
-            	<li><a href="#">Design</a></li>
-            	<li><a href="#">Development</a></li>
-            	<li><a href="#">Consulting</a></li>
-          	</ul>
-        	</li>
-
-      		</ul>
-    	</div>
-  	</div>
-	</nav>
-
-	<div class="jumbotron">
-  		<div class="container">
-    		<h1 class="headline">BUGGY</h1>
+  	   <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+    		     <span class="icon-bar"></span>
+    		     <span class="icon-bar"></span>
+      	   </button>
+         </div>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav navbar-right">
+             <li><a href="#">About</a></li>
+             <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                 <li><a href="#">Design</a></li>
+                 <li><a href="#">Development</a></li>
+                 <li><a href="#">Consulting</a></li>
+               </ul>
+             </li>
+           </ul>
+         </div>
+       </div>
+    </nav>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="headline">BUGGY</h1>
     		<p>Found a strange bug? Upload its image to find out what it is!</p>
     		<br>
     		<form id="file_upload" action="#" method="get" enctype="multipart/form-data">
-    			<!--<p><center><input align="center" type="file" class="btn btn-primary btn-lg" /></center></p>  </form>-->
-          <p><center><input type="file" multiple="false" class="btn btn-primary btn-lg" accept="image/*" id="finput" onchange="readURL(this);" /></center></p>  </form>
-    			<!--<p><input id="upload_image" type="submit" value="Upload Image" class="btn btn-primary btn-lg"/>-->
+          <p><center><input type="file" multiple="false" class="btn btn-primary btn-lg" accept="image/*" id="finput" onchange="readURL(this);" /></center></p>
+        </form>
         <a class="btn btn-primary btn-lg" href="http://www.apple.com" role="button">Analyze Bug</a></p>
-        <!--<canvas id="myCanvas" width="400" height="300" style="border:1px solid white; border-radius:50px"> </canvas>-->
-        <img id="blah" src="Waiting.jpg" alt="Your image will show here..." />
-
+        <img id="blah" src="Wait.jpg" alt="Your image will show here..." />
   		</div>
-	</div>
-
-	<section class="call-to-action">
-  		<div class="container">
-    		<div class="row">
-      			<div class="col-md-4">
-        			<img class="insect1" src="insect1.jpg" alt="Insect1">
-        			<h3>Encyclopedia</h3>
-        			<p>Gives relevant information such as the family of species and the region it is common in.</p>
-      			</div>
-      			<div class="col-md-4">
-        			<img class="insect2" src="insect2.jpg" alt="Insect2">
-        			<h3>Smart Analyzer</h3>
-        			<p>Able to identify all species of bugs, from insects to flying monsters.</p>
-      			</div>
-      			<div class="col-md-4">
-        			<img class="insect3" src="insect3.jpg" alt="Insect3">
-        			<h3>Safety Check</h3>
-        			<p>Ability to warn if the species is safe or a threat to humankind.</p>
-      			</div>
-    		</div>
-  		</div>
-	</section>
+    </div>
+    <section class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img class="insect1" src="insect1.jpg" alt="Insect1">
+            <h3>Encyclopedia</h3>
+            <p>Gives relevant information such as the family of species and the region it is common in.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="insect2" src="insect2.jpg" alt="Insect2">
+            <h3>Smart Analyzer</h3>
+            <p>Able to identify all species of bugs, from insects to flying monsters.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="insect3" src="insect3.jpg" alt="Insect3">
+            <h3>Safety Check</h3>
+            <p>Ability to warn if the species is safe or a threat to humankind.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
-  <!--<script type="text/javascript" src="js/jquery.js"></script>-->
-  <!--<script type="text/javascript" src="js/ext.js"></script>-->
   <script type="text/javascript" src="files.js"></script>
-
-
 </html>
