@@ -21,8 +21,9 @@ def upload_file():
       image = ClImage(url='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Theraphosa_blondi_MHNT.jpg/220px-Theraphosa_blondi_MHNT.jpg')
       model.predict([image])
       print model.predict_by_url(url='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Theraphosa_blondi_MHNT.jpg/220px-Theraphosa_blondi_MHNT.jpg')
-
+      #return render_template('results.html', summary = results)
       return 'file uploaded successfully'
+      
 
 if __name__ == "__main__":
     app.run()
