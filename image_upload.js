@@ -8,4 +8,5 @@ function readURL(input) {
 			 }
 			 var fileinput = document.getElementById("finput");
 			 console.log(fileinput.value + " has been uploaded");
-	 }
+			 export fileinput.value;
+}
