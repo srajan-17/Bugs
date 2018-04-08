@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Buggi</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	  <link href="css/custom.css" rel="stylesheet">
-	  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+	  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/custom.css')}}">
+	  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='https://fonts.googleapis.com/css?family=Montserrat:400,700')}}">
   </head>
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -35,30 +35,28 @@
         <h1 class="headline">BUGGI</h1>
     		<p>Found a strange bug? Upload its image to find out what it is!</p>
     		<br>
-    		<form id="file_upload" action="#" method="get" enctype="multipart/form-data">
-          <p><center><input type="file" multiple="false" class="btn btn-primary btn-lg" accept="image/*" id="finput" onchange="readURL(this);" /></center></p>
+        <form action = "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data">
+          <center><input type = "file" name = "file" multiple="false" class="btn btn-primary btn-lg" accept="image/*"/></center>
+          <center><input type = "submit" class="btn btn-primary btn-lg"/></center>
         </form>
-        <p><button type="button" class="btn btn-primary btn-lg" onclick="alertm()">Analyze Bug</button></p>
-        <p><a href="creepy/index.html"class="btn btn-primary btn-lg">Creep yourself out</a></p>
-        <img id="blah" src="Wait.jpg" alt="Your image will show here..." />
-
+        <p><a href="{{url_for('static', filename='creepy/index.html')}}" class="btn btn-primary btn-lg">Creep yourself out</a></p>
   		</div>
     </div>
     <section class="call-to-action">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <img class="insect1" src="insect1.jpg" alt="Insect1">
+            <img class="insect1" src="{{url_for('static', filename='insect1.jpg')}}" alt="Insect1">
             <h3>Encyclopedia</h3>
             <p>Gives relevant information such as the family of species and the region it is common in.</p>
           </div>
           <div class="col-md-4">
-            <img class="insect2" src="insect2.jpg" alt="Insect2">
+            <img class="insect2" src="{{url_for('static', filename='insect2.jpg')}}" alt="Insect2">
             <h3>Smart Analyzer</h3>
             <p>Able to identify all species of bugs, from insects to flying monsters.</p>
           </div>
           <div class="col-md-4">
-            <img class="insect3" src="insect3.jpg" alt="Insect3">
+            <img class="insec32" src="{{url_for('static', filename='insect3.jpg')}}" alt="Insect3">
             <h3>Safety Check</h3>
             <p>Ability to warn if the species is safe or a threat to humankind.</p>
           </div>

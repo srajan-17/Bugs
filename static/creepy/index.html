@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Woah</title>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+  <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
+  <link rel="icon" href="http://www.clker.com/cliparts/7/l/i/V/C/T/red-ant-hi.png" type="image/png" sizes="16x16">
+  </head>
+  <body>
+    <a-scene>
+      <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-image position="-1 0.5 -3" src="https://media.giphy.com/media/uNQl4edRHTSeI/giphy.gif"></a-image> -->
+
+      <!-- In front -->
+      <a-entity position="-1 1 -4" geometry="primitive:box;" material="shader:gif;src:url(https://media.giphy.com/media/uNQl4edRHTSeI/giphy.gif);" class="gif-box"><a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-entity>
+      <!-- To your left -->
+      <a-entity position="-4 3 0" geometry="primitive:box;" material="shader:gif;src:url(https://media.giphy.com/media/uNQl4edRHTSeI/giphy.gif);" class="gif-box"><a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-entity>
+      <!-- Left center -->
+      <a-entity position="-6 3 -8" geometry="primitive:box;" material="shader:gif;src:url(https://media.giphy.com/media/uNQl4edRHTSeI/giphy.gif);" class="gif-box"><a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-entity>
+      <!-- To your right -->
+      <a-entity position="4 3 0" geometry="primitive:box;" material="shader:gif;src:url(https://media.giphy.com/media/uNQl4edRHTSeI/giphy.gif);" class="gif-box"><a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-entity>
+      <!-- Right center -->
+      <a-entity position="4 3 -7" geometry="primitive:box;" material="shader:gif;src:url(https://media.giphy.com/media/uNQl4edRHTSeI/giphy.gif);" class="gif-box"><a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-entity>
+      <!-- Top right -->
+      <a-image position=" 2 5 -3" material="shader:gif;src:url(https://media.giphy.com/media/oSUtmrhRz5te0/giphy.gif);"></a-image>
+      <!-- Behind -->
+      <a-image position="0 1 200" material="shader:gif;src:url(https://media.giphy.com/media/tYOCuCrJeO8XC/giphy.gif);" width="300" height="300" ></a-image>
+      <!-- 360 Background -->
+      <a-sky material="shader:gif;src:url(https://media.giphy.com/media/3o85xnIaq3MG1MqUDu/giphy.gif);"></a-sky>
+    </a-scene>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
