@@ -16,14 +16,14 @@ def upload_file():
    if request.method == 'POST':
       f = request.files['file']
       f.save(secure_filename(f.filename))
-      key = ClarifaiApp(api_key='c4406989d7624ad0aa336616ea3e4ada')
+      key = ClarifaiApp(api_key='*')
       model = key.models.get('Bugz')
       image = ClImage(url='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Theraphosa_blondi_MHNT.jpg/220px-Theraphosa_blondi_MHNT.jpg')
       model.predict([image])
       print model.predict_by_url(url='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Theraphosa_blondi_MHNT.jpg/220px-Theraphosa_blondi_MHNT.jpg')
       #return render_template('results.html', summary = results)
       return 'file uploaded successfully'
-      
+
 
 if __name__ == "__main__":
     app.run()
