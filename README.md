@@ -7,5 +7,3 @@
 ```$ python image_submit2.py```
 
 ## The website primarily uses an API from Clarifai for the image recognition capability, and is written using HTML, CSS, Javascript, and Python.
-
-## Clarifai API: AI
